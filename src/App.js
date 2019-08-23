@@ -1,24 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import test from './test.png'
 function App() {
+  const styleObject = {width: 300, borderColor: 'green', height: 500}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="card" style={styleObject}>   
+        <img class="card-img-top" src={test} alt="Card image cap"></img> 
+          <h5 class="card-title">Card title</h5>
     </div>
   );
 }
